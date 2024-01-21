@@ -37,7 +37,7 @@ class Authentication extends Controller
         } catch (\Exception $e) {
             \Log::error($e);
             error_log($e->getMessage());
-            return response()->json(['error' => 'Internal Server Error'], 500);
+            return response()->json(['error' => 'Internal Server Error.'], 500);
         }
     }
 
