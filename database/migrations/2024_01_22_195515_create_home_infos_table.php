@@ -10,12 +10,12 @@ return new class extends Migration {
     {
         Schema::create('home_infos', function (Blueprint $table) {
             $table->id();
-            $table->string('parincipalTitle');
-            $table->text('biography');
-            $table->string('secondaryTitle');
-            $table->text('descriptionLeft');
-            $table->text('descriptionRight');
-            $table->string('motivationalPhrase');
+            $table->string('principalTitle')->nullable();
+            $table->text('biography')->nullable();
+            $table->string('secondaryTitle')->nullable();
+            $table->text('descriptionLeft')->nullable();
+            $table->text('descriptionRight')->nullable();
+            $table->string('motivationalPhrase')->nullable();
             $table->timestamps();
         });
     }

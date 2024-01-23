@@ -9,35 +9,50 @@
 
 <body>
     <div style="
-        background-color: #dddddd;
+        background-color: #ffffff;
         justify-content: space-between;
         text-align: center;
         border-radius: 10px;
       ">
         <div style="
-          background-color: #757474;
+          background-color: #5cabab;
           border-radius: 5px 5px 0 0;
           padding: 10px;
+          box-shadow: 2px 2px 5px #00000090;
         ">
-            <h2 style="font-weight: 600; color: #fff">Estimado {{ $name }}</h2>
+            <h2 style="font-weight: 600; font-size: 28px; letter-spacing: 0.5px">
+                Holis Valenchu
+            </h2>
         </div>
-        <div style="padding: 20px; font-weight: 600; color: black">
-            <p>Recibiste este correo electrónico porque solicitaste restablecer la contraseña de tu cuenta.</p>
-            <p>Haz clic en el siguiente enlace para restablecer tu contraseña:</p>
+        <div style="
+          padding: 20px;
+          font-weight: 600;
+          font-size: 20px;
+          letter-spacing: 0.3px;
+        ">
+            <p>
+                Te olvidaste la contraseña? No hay problema. PONUS te lo resuelve
+                &#128526;
+            </p>
+            <p>Hacé click en el enlace de abajo para crear una nueva &#129395;</p>
             <a href="{{ $resetLink }}">Restablecer contraseña</a>
         </div>
-        <img style="height: 350px; border-radius: 5px; margin-bottom: 20px"
-            src="https://scontent.faep9-1.fna.fbcdn.net/v/t1.18169-9/29597510_10155509264402149_7415407965392304674_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9a8829&_nc_ohc=l8spp75GlhsAX_KAJwD&_nc_ht=scontent.faep9-1.fna&oh=00_AfBifI7OVS29Ynvl83KxcXX3dNYB6_4J8riJa7D6kDEBIQ&oe=65AD1705"
+        <img style="
+          height: 300px;
+          border-radius: 20px;
+          margin: 50px;
+          box-shadow: 2px 2px 5px #00000090;
+        " src="https://scontent.fros2-1.fna.fbcdn.net/v/t39.30808-6/290031122_142661945085687_3207411458617826735_n.png?_nc_cat=108&ccb=1-7&_nc_sid=783fdb&_nc_ohc=PHu9e-4RAokAX8Nsdb6&_nc_ht=scontent.fros2-1.fna&oh=00_AfDrSD8d9ByWRX__4p1i74C2inEjt__KAxU7Dd4AAy7M7A&oe=65B49875"
             alt="" />
         <div style="
-          background-color: #757474;
+          background-color: #84e7e785;
           border-radius: 0 0 5px 5px;
           font-weight: 500;
-          color: white;
           padding: 10px;
+          box-shadow: 2px -2px 5px #00000090;
         ">
-            <p style="font-weight: 600; font-size: 20px">
-                Escuela Superior J. J. Urquiza N°49
+            <p style="font-weight: 600; font-size: 15px; letter-spacing: 0.3px">
+                Desarrollado por ⒸPONUS
             </p>
         </div>
     </div>

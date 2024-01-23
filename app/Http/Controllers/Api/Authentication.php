@@ -96,9 +96,9 @@ class Authentication extends Controller
         $user->update(['reset_password_token' => $token]);
 
         $frontendResetLink = env('FRONTEND_URL') . '/reset-password/' . $token;
-        $name = $user->name;
 
-        Mail::to($user->email)->send(new ResetPasswordMail($frontendResetLink, $name));
+
+        Mail::to($user->email)->send(new ResetPasswordMail($frontendResetLink, ));
 
         return response()->json(['message' => 'Enlace de restablecimiento de contraseña enviado al correo electrónico.']);
     }
