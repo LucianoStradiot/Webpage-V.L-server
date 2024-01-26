@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use \CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 
 class HomeInfo extends Model
 {
@@ -14,6 +15,11 @@ class HomeInfo extends Model
         'secondaryTitle',
         'descriptionLeft',
         'descriptionRight',
-        'motivationalPhrase'
+        'motivationalPhrase',
+        'profilePhoto',
+        'helpPhoto1',
+        'helpPhoto2'
     ];
+
+
 }

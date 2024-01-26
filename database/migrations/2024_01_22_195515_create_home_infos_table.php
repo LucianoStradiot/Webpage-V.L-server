@@ -16,6 +16,9 @@ return new class extends Migration {
             $table->text('descriptionLeft')->nullable();
             $table->text('descriptionRight')->nullable();
             $table->string('motivationalPhrase')->nullable();
+            $table->string('profilePhoto')->nullable();
+            $table->string('helpPhoto1')->nullable();
+            $table->string('helpPhoto2')->nullable();
             $table->timestamps();
         });
     }

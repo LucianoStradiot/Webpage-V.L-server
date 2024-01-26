@@ -14,7 +14,7 @@ use App\Mail\ResetPasswordMail;
 use \App\Models\SuperAdmin;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Log;
-use App\Http\Resources\SuperAdminResource;
+use App\Http\Resources\HomeInfoResource;
 
 class Authentication extends Controller
 {
@@ -61,14 +61,14 @@ class Authentication extends Controller
 
             $profilePhotoPath = null;
 
-            if ($request->hasFile('profile_photo')) {
-                $profilePhotoPath = $request->file('profile_photo')->storeOnCloudinary()->getPublicId();
+            if ($request->hasFile('profilePhoto')) {
+                $profilePhotoPath = $request->file('profilePhoto')->storeOnCloudinary()->getPublicId();
             }
 
             Auth::login($user);
             $request->session()->regenerate();
             $token = $user->createToken('main')->plainTextToken;
-            $userResource = new SuperAdminResource($user);
+            $userResource = new HomeInfoResource($user);
 
             return response([
                 'user' => $userResource,
